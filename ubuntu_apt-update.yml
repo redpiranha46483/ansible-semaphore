@@ -2,5 +2,5 @@
   become: true
   tasks:
    apt:
-      update_cache: yes
-      upgrade: yes
+     - update_cache: yes
+     - upgrade: yes
