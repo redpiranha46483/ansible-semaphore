@@ -1,4 +1,6 @@
 - name: install updates
+  gather_facts: no
+  become: true
   hosts: all
   tasks:
           - name: Updating host using apt
