@@ -1,7 +1,8 @@
-- hosts: ubuntu
+- hosts: all
+  become: true
   tasks:
-    apt:
+   apt:
       update_cache: yes
-      upgrade: dist
+      upgrade: yes
       autoremove: yes
       purge: yes
