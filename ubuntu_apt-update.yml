@@ -1,5 +1,5 @@
 - name: install updates
-  hosts: ubuntu
+  hosts: all
   tasks:
           - name: Updating host using apt
             apt:
